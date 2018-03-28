@@ -1,0 +1,61 @@
+.btn{
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &--hover{
+
+  }
+
+  &:active,
+  &--active{
+
+  }
+
+  // Size modificator
+
+  &-size-m {
+    height: 40px;
+    width: 212px;
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  &-size-ml {
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin: 10px;
+    @media (max-width: 768px) {
+      margin: 5px;
+    }
+  }
+
+  // Color modificator
+
+  &-orange{
+    background: @color-primary;
+    color: @color-text-light;
+    &:hover,
+    &--hover{
+      background: @color-primary--hover;
+    }
+
+    &:active,
+    &--active{
+
+    }
+  }
+
+  &-ghost-orange {
+    background: transparent;
+    color: @color-primary;
+    border: 2px solid @color-primary;
+  }
+}
